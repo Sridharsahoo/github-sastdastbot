@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/" #Location of dependency files.
+    schedule:
+    interval: "weekly" #Check for dependency updates every week.
+  open-pull-requests-limit: 10 #Maximum 10 Dependabot PRs can remain open simultaneously.
+
+  labels:
+    - dependencies
+    - security
+
+  commit-message:
+  prefix: "deps" #Customizes commit messages.
+
+  reviewers:
+    - Sridharsahoo #Automatically requests review from:
